@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class FurgonetaPequeña here.
+ * Write a description of class VehiculoPequeño here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FurgonetaPequeña
+public class VehiculoPeque extends Vehiculo
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class FurgonetaPequeña
+     * Constructor for objects of class VehiculoPequeño
      */
-    public FurgonetaPequeña()
+    public VehiculoPeque()
     {
         // initialise instance variables
         x = 0;

@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class Camiones here.
+ * Write a description of class FurgonetaPequeña here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Camiones extends VehiculoGrande implements Revision
+public class FurgonetaPeque extends VehiculoPeque 
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class Camiones
+     * Constructor for objects of class FurgonetaPequeña
      */
-    public Camiones()
+    public FurgonetaPeque()
     {
         // initialise instance variables
         x = 0;
