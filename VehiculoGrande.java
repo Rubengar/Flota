@@ -18,4 +18,9 @@ public class VehiculoGrande extends Vehiculo
         super(marca,antiguedad,kilometros);
         this.peso = peso;
     }
+    
+    public int getPeso()
+    {
+        return peso;
+    }
 }

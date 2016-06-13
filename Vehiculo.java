@@ -30,4 +30,14 @@ public abstract class Vehiculo
         this.kilometros = kilometros;
         id++;
     }
+    
+    public String getMarca()
+    {
+        return marca;
+    }
+    
+    public int getId()
+    {
+        return id;
+    }
 }

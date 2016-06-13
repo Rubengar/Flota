@@ -19,5 +19,10 @@ public class VehiculoPeque extends Vehiculo
         super(marca,antiguedad,kilometros);
         this.numPlazas = numPlazas;
     }
+    
+    public int getNumPlazas()
+    {
+        return numPlazas;
+    }
 
 }

@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FurgonetaPeque extends VehiculoPeque 
+public class FurgonetaPeque extends VehiculoPeque implements Revision
 {
     // instance variables - replace the example below with your own
     private int x;
@@ -16,5 +16,15 @@ public class FurgonetaPeque extends VehiculoPeque
     public FurgonetaPeque(Marcas marca,int antiguedad, int kilometros, int numPlazas)
     {
         super(marca,antiguedad,kilometros,numPlazas);
+    }
+    @Override
+    public boolean cumpleMedidas()
+    {
+        boolean cumple = false;
+        if(getNumPlazas() <= 7)
+        {
+            cumple=true;
+        }
+        return cumple;
     }
 }

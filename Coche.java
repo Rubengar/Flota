@@ -17,5 +17,24 @@ public class Coche extends VehiculoPeque implements Revision
     {
         super(marca,antiguedad,kilometros,numPlazas);
     }
-
+    
+    public int revisionCada()
+    {
+        int num = 1;
+        if(getMarca()== Marcas.FORD.getMarca())
+        {
+            num = 2;
+        }
+        return num;
+    }
+    @Override
+    public boolean cumpleMedidas()
+    {
+        boolean cumple = false;
+        if(getNumPlazas() <= 5)
+        {
+            cumple=true;
+        }
+        return cumple;
+    }
 }
