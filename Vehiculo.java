@@ -7,7 +7,15 @@
 public abstract class Vehiculo
 {
     // instance variables - replace the example below with your own
-    int x;
+    private String marca;
+    
+    private int antiguedad;
+    
+    private int kilometros;
+    
+    private static int id = 0;
+    
+    
 
     /**
      * An example of a method - replace this comment with your own
@@ -15,9 +23,11 @@ public abstract class Vehiculo
      * @param  y    a sample parameter for a method
      * @return        the sum of x and y 
      */
-    public int sampleMethod(int y)
+    public Vehiculo(Marcas marca,int antiguedad, int kilometros)
     {
-        // put your code here
-        return x + y;
+        this.marca = marca.getMarca();
+        this.antiguedad= antiguedad;
+        this.kilometros = kilometros;
+        id++;
     }
 }
