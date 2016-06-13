@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class VehiculoGrande extends Vehiculo
+public abstract class VehiculoGrande extends Vehiculo
 {
     // instance variables - replace the example below with your own
     private int peso;
@@ -23,4 +23,6 @@ public class VehiculoGrande extends Vehiculo
     {
         return peso;
     }
+    public abstract boolean cumpleMedidas();
+    public abstract int[] getDatos();
 }

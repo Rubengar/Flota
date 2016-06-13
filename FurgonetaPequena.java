@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FurgonetaPeque extends VehiculoPeque implements Revision
+public class FurgonetaPequena extends VehiculoPeque 
 {
     // instance variables - replace the example below with your own
     private int x;
@@ -13,7 +13,7 @@ public class FurgonetaPeque extends VehiculoPeque implements Revision
      /**
      * Constructor for objects of class Coche
      */
-    public FurgonetaPeque(Marcas marca,int antiguedad, int kilometros, int numPlazas)
+    public FurgonetaPequena(Marcas marca,int antiguedad, int kilometros, int numPlazas)
     {
         super(marca,antiguedad,kilometros,numPlazas);
     }
@@ -26,5 +26,15 @@ public class FurgonetaPeque extends VehiculoPeque implements Revision
             cumple=true;
         }
         return cumple;
+    }
+    @Override
+    public int[] getDatos()
+    {
+        int[] array = new int[5];
+        array[0] = getId();
+        array[1] = getAntiguedad();
+        array[2] = getKilometros();
+        array[3] = getNumPlazas();
+        return array;
     }
 }

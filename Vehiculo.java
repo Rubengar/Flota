@@ -26,7 +26,7 @@ public abstract class Vehiculo
     public Vehiculo(Marcas marca,int antiguedad, int kilometros)
     {
         this.marca = marca.getMarca();
-        this.antiguedad= antiguedad;
+        this.antiguedad = antiguedad;
         this.kilometros = kilometros;
         id++;
     }
@@ -40,4 +40,17 @@ public abstract class Vehiculo
     {
         return id;
     }
+    
+    public int getAntiguedad()
+    {
+        return antiguedad;
+    }
+    
+    public int getKilometros()
+    {
+        return antiguedad;
+    }
+    
+    public abstract boolean cumpleMedidas();
+    public abstract int[] getDatos();
 }

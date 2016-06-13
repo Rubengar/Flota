@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Coche extends VehiculoPeque implements Revision
+public class Coche extends VehiculoPeque
 {
     // instance variables - replace the example below with your own
 
@@ -36,5 +36,16 @@ public class Coche extends VehiculoPeque implements Revision
             cumple=true;
         }
         return cumple;
+    }
+    @Override
+    public int[] getDatos()
+    {
+        int[] array = new int[5];
+        array[0] = getId();
+        array[1] = getAntiguedad();
+        array[2] = getKilometros();
+        array[3] = getNumPlazas();
+        array[4] = revisionCada();
+        return array;
     }
 }
